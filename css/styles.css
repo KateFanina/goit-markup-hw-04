@@ -47,12 +47,6 @@ body {
 
 /* Шапка сайта site-nav */
 
-.link:hover,
-.link:focus,
-.link.current {
-  color: var(--accent-color);
-}
-
 .site-nav,
 .list,
 .filter,
@@ -86,6 +80,12 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.link:hover,
+.link:focus,
+.link.current {
+  color: var(--accent-color);
 }
 
 ul {
