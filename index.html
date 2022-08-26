@@ -23,27 +23,34 @@
             <a href="index.html" class="logo"><span class="logo-item">Web</span>Studio</a>
             <nav>
                 <ul class="site-nav">
-                    <li class="item"><a href="" class="link current">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-                    <li class="item"><a href="" class="link">Контакти</a></li>
+                    <li class="item">
+                        <a href="" class="link current">Студія</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="link">Портфоліо</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">Контакти</a>
+                    </li>
                 </ul>
             </nav>
             <ul class="list">
                 <li class="item">
-                    <a class="link" href="mailto:info@devstudio.com">
-                        <svg class="item-icon">
-                            <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-envelope" weight="16"
-                                height="12"></use>
+                    <a class="link  contact" href="mailto:info@devstudio.com">
+                        <svg class="item-icon" width="16" height="12">
+                            <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li class="item">
-                    <svg>
-                        <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-phone" weight="10" height="16">
-                        </use>
-                    </svg>
-                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="link contact" href="tel:+380961111111">
+                        <svg class="item-icon" width="10" height="16">
+                            <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-phone">
+                            </use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
                 </li>
             </ul>
         </div>
@@ -174,7 +181,6 @@
                             </li>
                         </ul>
                     </li>
-                <!-- </ul> -->
                     <li class="teams calculation">
                         <img src="images/olga.jpg" alt="Ольга Рєпіна" width="270" height="260">
                         <div class="team-text">
@@ -301,6 +307,7 @@
                 </ul>
             </div>
         </section>
+        <!-- Постійні клієнти -->
         <section class="section">
             <div class="conteiner">
                 <h2 class="team-title">Постійні клієнти</h2>
@@ -358,63 +365,65 @@
 
     <!-- Футер -->
     <footer class="footer">
-        <div class="conteiner">
-            <a href="index.html" class="logo-footer"><span class="logo-item">Web</span>Studio</a>
-            <address>
-                <ul class="contacts">
-                    <li class="contacts-link">
-                        <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                            rel="noopener noreferrer nofollow">
-                            м.
-                            Київ, пр-т Лесі
-                            Українки, 26</a>
+        <div class="conteiner footer-conteiner">
+            <div>
+                <a href="index.html" class="logo-footer"><span class="logo-item">Web</span>Studio</a>
+                <address>
+                    <ul class="contacts">
+                        <li class="contacts-link">
+                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow">
+                                м.
+                                Київ, пр-т Лесі
+                                Українки, 26</a>
+                        </li>
+                        <li class="contacts-link">
+                            <a class="link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="contacts-link">
+                            <a class="link" href="+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="join">
+                <h3 class="contact-title">приєднуйтесь</h3>
+                <ul class="lists-icon">
+                    <li class="team-icon">
+                        <a class="link-icon icons" href="">
+                            <svg class="svg-icon">
+                                <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contacts-link">
-                        <a class="link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="team-icon">
+                        <a class="link-icon icons" href="">
+                            <svg class="svg-icon">
+                                <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contacts-link">
-                        <a class="link" href="+380991111111">+38 099 111 11 11</a>
+                    <li class="team-icon">
+                        <a class="link-icon icons" href="">
+                            <svg class="svg-icon">
+                                <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-icon">
+                        <a class="link-icon icons" href="">
+                            <svg class="svg-icon">
+                                <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
-        <div class="conteiner join">
-         <h3 class="contact-title">приєднуйтесь</h3> 
-        <ul class="list-icon">
-            <li class="team-icon">
-                <a class="link-icon" href="">
-                    <svg class="svg-icon">
-                        <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-instagram">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-            <li class="team-icon">
-                <a class="link-icon" href="">
-                    <svg class="svg-icon">
-                        <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-twitter">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-            <li class="team-icon">
-                <a class="link-icon" href="">
-                    <svg class="svg-icon">
-                        <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-facebook">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-            <li class="team-icon">
-                <a class="link-icon" href="">
-                    <svg class="svg-icon">
-                        <use href="../goit-markup-hw-04/images/icons.svg/sprite.svg#icon-linkedin">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        </div>  
     </footer>
 </body>
 
