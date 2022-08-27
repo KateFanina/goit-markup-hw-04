@@ -64,12 +64,12 @@ body {
   padding-left: 0;
 }
 
-.site-nav .item + .item{
+.site-nav .item + .item {
   margin-left: 50px;
 }
 
-.list .item + .item{
-   margin-left: var(--card-set);
+.list .item + .item {
+  margin-left: var(--card-set);
 }
 
 .site-nav .link {
@@ -97,33 +97,32 @@ ul {
 }
 
 .list .link {
+  align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
 .item-icon {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-right: 10px;
-
 }
-.contact{
-   fill: var(--title-color);
+.contact {
+  fill: var(--title-color);
 }
 .contact:hover,
-.contact:focus{
-  fill: var(--accent-color)
+.contact:focus {
+  fill: var(--accent-color);
 }
-
 
 /* Замовити послугу */
 .hat {
-  margin-top: 0;
-  margin-bottom: 0;
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--secondary-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -181,7 +180,8 @@ button {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
-  box-shadow: 0px 4px 4px rgba(245, 244, 250, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Особливості */
@@ -195,14 +195,9 @@ button {
 .feature-list {
   width: 270px;
   height: 120px;
+  margin-bottom: var(--card-set);
   padding: 25px 100px;
   background-color: rgba(245, 244, 250, 1);
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.feature-icons {
-  width: 70px;
-  height: 70px;
 }
 
 .section {
@@ -221,6 +216,7 @@ button {
 }
 
 .section-text {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.71;
@@ -255,21 +251,18 @@ img {
   margin-bottom: var(--card-set);
   margin-right: var(--card-set);
 }
-  .flex-link{
-display: block;
-  }
-  
+.flex-link {
+  display: block;
+}
+
 .flex-link:hover,
-.flex-link:focus{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+.flex-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-list:nth-child(3n) {
   margin-right: 0;
-}
-.flex-element {
-  width: 270px;
 }
 
 .flex-item-border {
@@ -287,9 +280,12 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   margin-left: var(--card-set);
 }
 
-
 .calculation {
   flex-basis: calc((100% - 3 * var(--card-set)) / 4);
+}
+
+.clients-calc {
+  flex-basis: calc((100% - 5 * var(--card-set)) / 6);
 }
 
 .teams {
@@ -310,7 +306,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 
 .team-text {
   padding-top: var(--card-set);
-  }
+  padding-bottom: var(--card-set);
+}
 
 .team-person {
   margin-top: 0;
@@ -357,7 +354,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   padding-left: 32px;
   padding-right: 32px;
   margin-bottom: 0;
-  padding-bottom: var(--card-set);
 }
 
 .link-icon {
@@ -372,11 +368,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   cursor: pointer;
 }
 .svg-icon {
-  width: 20px;
-  height: 20px;
   color: currentColor;
 }
 .clients {
+  padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -392,17 +387,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   align-items: center;
   justify-content: center;
   fill: rgba(175, 177, 184, 1);
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   margin-bottom: 0;
   cursor: pointer;
-}
-
-.client-svg {
-  width: 106px;
-  height: 60px;
 }
 
 /* Футер */
@@ -415,11 +404,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 
 .lists-icon {
   display: flex;
-   margin-bottom: 0;
+  margin-bottom: 0;
   padding-left: 0;
- 
 }
-[href*='maps']{
+[href*='maps'] {
   color: var(--title-text-color);
   text-decoration: none;
 }
@@ -446,11 +434,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   text-decoration: none;
 }
 
-.icons{
-  fill: var(--title-text-color) ;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+.icons {
+  fill: var(--title-text-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 .contacts .link {
   color: rgba(255, 255, 255, 0.6);
@@ -464,30 +452,30 @@ body .link {
 }
 
 .link:hover,
-.link:focus{
+.link:focus {
   color: var(--accent-color);
 }
 
-.item-icon:hover, 
-.item-icon:focus{
+.item-icon:hover,
+.item-icon:focus {
   color: var(--accent-color);
 }
-.footer-conteiner{
+.footer-conteiner {
   display: flex;
-    align-items: baseline;
+  align-items: baseline;
 }
 
 .join {
   margin-left: 70px;
- }
+}
 .contact-title {
-   font-weight: 700;
-   text-transform: uppercase;
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 20px;
-  }
-.team-icon{
+}
+.team-icon {
   display: flex;
 }
 
@@ -510,7 +498,7 @@ body .link {
   border-radius: 4px;
 }
 .filter-item:hover,
- .filter-item:focus{
+.filter-item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
