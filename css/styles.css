@@ -253,7 +253,9 @@ img {
 }
 .flex-link {
   display: block;
-}
+      text-decoration: none;
+  }
+
 
 .flex-link:hover,
 .flex-link:focus {
